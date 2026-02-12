@@ -4,5 +4,5 @@ RUN pip3 install Flask requests pytz psutil paho-mqtt
 
 COPY rootfs /
 
-RUN chmod a+x /etc/services.d/*/run \
- && chmod a+x /etc/cont-init.d/* 2>/dev/null || true
+RUN find /etc/services.d -type f -exec chmod a+x {} \; \
+    && find /simplescheduler -type f -name "*.sh" -exec chmod a+x {} \;
