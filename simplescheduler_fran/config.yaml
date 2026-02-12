@@ -1,0 +1,20 @@
+---
+version: 3.2.2-fran1
+name: SimpleScheduler FRAN
+description: 'SimpleScheduler parcheado: solo FRAN ve opciones admin'
+slug: simplescheduler_fran
+url: https://github.com/franciscogimeno2000/MYSIMPLESCHEDULER
+arch:
+- aarch64
+- amd64
+- armhf
+- armv7
+- i386
+init: false
+homeassistant_api: true
+ingress: true
+panel_admin: false
+panel_title: Scheduler
+panel_icon: mdi:calendar-clock
+map:
+- share:rw
