@@ -14,7 +14,7 @@ init: false
 homeassistant_api: true
 ingress: true
 panel_admin: false
-panel_title: Scheduler
+panel_title: Horarios
 panel_icon: mdi:calendar-clock
 map:
 - share:rw
