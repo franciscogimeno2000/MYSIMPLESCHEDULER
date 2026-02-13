@@ -11,7 +11,7 @@
 					<div>
 						<label class="checkbox-inline"><input type="checkbox" name="enabled" value="1" {{ 'checked ' if p.enabled else ' ' }}  > {{ o.translations.text_enabled }}</label>
 						&nbsp;&nbsp;&nbsp;
-						<label class="checkbox-inline"><input type="checkbox" name="dontretry" value="1" {{ 'checked ' if p.dontretry else ' ' }}  > Do not retry</label>
+						<label class="checkbox-inline"><input type="checkbox" name="dontretry" value="1" {{ 'checked ' if p.dontretry else ' ' }}  > No reintentar</label>
 					</div>
 
 					<div class="edit-section-label"><label>{{ o.translations.text_device }}</label></div>
@@ -32,7 +32,7 @@
 						{% if is_admin %}<button id="addRow" type="button" class="btn btn-info bg-primary addRow">+</button>{% endif %}
 					</div>
 
-					<div class="edit-section-label"><label>Condition Template <span class="mdi mdi-thumb-up"></span> <span class="mdi mdi-thumb-down"></span></label></div>
+					<div class="edit-section-label"><label>Plantilla de condición <span class="mdi mdi-thumb-up"></span> <span class="mdi mdi-thumb-down"></span></label></div>
 					<div>
 						<!--- <input type="text" name="template" class="form-control input-sm" value="{{ p.template }}"> -->
 						<textarea name="template" id="template" class="form-control input-sm">{{ p.template }}</textarea>
@@ -101,19 +101,19 @@
 								<div class="col-sm-3">
 								  <div class="input-group mb-2">
 									<div class="input-group-prepend"><div class="input-group-text"><span class="mdi mdi-arrow-expand-right" ></span></div></div>
-									<input type="text" value="{{ p.recurring.on_start }}" class="form-control form-control-sm time_validate" name="on_start" id="on_start" placeholder="start">
+								<input type="text" value="{{ p.recurring.on_start }}" class="form-control form-control-sm time_validate" name="on_start" id="on_start" placeholder="inicio">
 								  </div>
 								</div>
 								<div class="col-sm-3">
 								  <div class="input-group mb-2">
 									<div class="input-group-prepend"><div class="input-group-text"><span class="mdi mdi-arrow-expand-left" ></span></div></div>
-									<input type="text" value="{{ p.recurring.on_end }}" class="form-control form-control-sm time_validate" name="on_end" id="on_end"  placeholder="end">
+								<input type="text" value="{{ p.recurring.on_end }}" class="form-control form-control-sm time_validate" name="on_end" id="on_end"  placeholder="fin">
 								  </div>
 								</div>
 								<div class="col-sm-3">
 								  <div class="input-group mb-2">
 									<div class="input-group-prepend"><div class="input-group-text"><span class="mdi mdi-arrow-expand-horizontal" ></span></div></div>
-									<input type="text" value="{{ p.recurring.on_interval }}"class="form-control form-control-sm interval_validate" name="on_interval" id="on_interval"  placeholder="interval">
+								<input type="text" value="{{ p.recurring.on_interval }}"class="form-control form-control-sm interval_validate" name="on_interval" id="on_interval"  placeholder="intervalo">
 								  </div>
 								</div>
 								<div class="col-auto">
@@ -135,19 +135,19 @@
 								<div class="col-sm-3">
 								  <div class="input-group mb-2">
 									<div class="input-group-prepend"><div class="input-group-text"><span class="mdi mdi-arrow-expand-right" ></span></div></div>
-									<input type="text" value="{{ p.recurring.off_start }}" class="form-control form-control-sm time_validate" name="off_start" id="off_start" placeholder="start">
+								<input type="text" value="{{ p.recurring.off_start }}" class="form-control form-control-sm time_validate" name="off_start" id="off_start" placeholder="inicio">
 								  </div>
 								</div>
 								<div class="col-sm-3">
 								  <div class="input-group mb-2">
 									<div class="input-group-prepend"><div class="input-group-text"><span class="mdi mdi-arrow-expand-left" ></span></div></div>
-									<input type="text" value="{{ p.recurring.off_end }}" class="form-control form-control-sm time_validate" name="off_end" id="off_end"  placeholder="end">
+								<input type="text" value="{{ p.recurring.off_end }}" class="form-control form-control-sm time_validate" name="off_end" id="off_end"  placeholder="fin">
 								  </div>
 								</div>
 								<div class="col-sm-3">
 								  <div class="input-group mb-2">
 									<div class="input-group-prepend"><div class="input-group-text"><span class="mdi mdi-arrow-expand-horizontal" ></span></div></div>
-									<input type="text" value="{{ p.recurring.off_interval }}"class="form-control form-control-sm interval_validate" name="off_interval" id="off_interval"  placeholder="interval">
+								<input type="text" value="{{ p.recurring.off_interval }}"class="form-control form-control-sm interval_validate" name="off_interval" id="off_interval"  placeholder="intervalo">
 								  </div>
 								</div>
 								<div class="col-auto">
