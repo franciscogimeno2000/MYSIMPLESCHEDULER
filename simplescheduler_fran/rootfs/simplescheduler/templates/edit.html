@@ -6,7 +6,7 @@
 
 					<div class="edit-section-label"><label>{{ o.translations.text_name }}</label></div>
 					<div>
-						<input type="text" name="name" class="form-control input-sm" placeholder="{{ o.translations.text_name }}" value="{{ p.name }}"{% if not is_admin %} disabled{% endif %}>
+						<input type="text" name="name" class="form-control input-sm" placeholder="{{ o.translations.text_name }}" value="{{ p.name }}">
 					</div>
 					<div>
 						<label class="checkbox-inline"><input type="checkbox" name="enabled" value="1" {{ 'checked ' if p.enabled else ' ' }}  > {{ o.translations.text_enabled }}</label>
