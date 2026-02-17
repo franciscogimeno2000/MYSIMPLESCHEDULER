@@ -980,8 +980,8 @@ def evaluate_event_time(s, sunrise, sunset):
     today = datetime.now().strftime("%d")
     if len(s) > 3:
         p = (s.upper()
-             .replace('SALIDA_SOL','SUNRISE')
-             .replace('PUESTA_SOL','SUNSET')
+             .replace('SALIDA_SOL','SUNRISE', 1)
+             .replace('PUESTA_SOL','SUNSET', 1)
              .split('>'))
         event = p[0]
         operator = "~"
