@@ -979,7 +979,10 @@ def evaluate_event_time(s, sunrise, sunset):
         sunset_day = sunset.strftime("%d")
     today = datetime.now().strftime("%d")
     if len(s) > 3:
-        p = s.upper().split('>')
+        p = (s.upper()
+             .replace('SALIDA_SOL','SUNRISE')
+             .replace('PUESTA_SOL','SUNSET')
+             .split('>'))
         event = p[0]
         operator = "~"
         if event[:3] == "SUN":
