@@ -1,5 +1,5 @@
 ---
-version: 4.2.2-fran1
+version: 5.0.0-fran1
 name: SimpleScheduler FRAN
 description: 'SimpleScheduler parcheado: solo FRAN ve opciones admin'
 slug: simplescheduler_fran
